@@ -1,0 +1,44 @@
+plugins:
+pyhon
+django
+Tabnine
+mintlify
+thunder client
+
+$ python -m venv venv
+
+F1 python select interpreter
+
+$ pip install django
+
+$ django-admin startproject server .
+
+$ python manage.py migrate
+
+$ python manage.py runserver
+
+$ pip install djangorestframework
+
+create views.py
+
+create urls.py
+
+create serializers.py
+
+thunder client request:
+POST http://localhost:8000/register
+{
+  "username": "user_one",
+  "email": "user_one@email.com",
+  "password": "user_one_p"
+}
+Response:
+{
+  "token": "691a771579d33c4e5ccc573403a849b22cea2186",
+  "user": {
+    "id": 1,
+    "username": "user_one",
+    "email": "user_one@email.com",
+    "password": "user_one_p"
+  }
+}
